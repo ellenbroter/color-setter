@@ -12,15 +12,15 @@ const ColorSetter = () => {
 			return state;
 		}
 	}
-	const [color, dispatch] = useReducer(reducer, "grey")
+	const [color, dispatch] = useReducer(reducer, "lightgrey")
 	return(
 		<>
 			<div className={styles.content} style={{backgroundColor: color}}>Content</div>
 			<div>
-				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'green'})}>Green</button>
-				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'yellow'})}>Yellow</button>
-				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'blue'})}>Blue</button>
-				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'red'})}>Red</button>
+				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'lightgreen'})}>Green</button>
+				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'lightyellow'})}>Yellow</button>
+				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'lightblue'})}>Blue</button>
+				<button onClick={()=> dispatch({type: "SET_COLOR", payload: 'lightcoral'})}>Red</button>
 			</div>
 		</>
 	)
